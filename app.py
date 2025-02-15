@@ -44,12 +44,6 @@ def main():
 
 
 
-tab1, tab2, tab3 = st.tabs([
-    "Prediction",
-    "tab2",
-    "tab3"
-])
-
 with tab1:
     st.header("Student Prediction")
 

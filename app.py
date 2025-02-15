@@ -41,8 +41,6 @@ st.title('Jaya Jaya Institute Student Prediction using Machine Learning')
 def main():
     st.write("by B244044F")       
 
-if __name__ == '__main__':
-    main()
 
 
 
@@ -109,5 +107,7 @@ with tab1:
                 mime='text/csv'
             )
 
+if __name__ == '__main__':
+    main()
 
 

@@ -48,8 +48,8 @@ if __name__ == '__main__':
 
 tab1, tab2, tab3 = st.tabs([
     "Prediction",
-    "Dashboard",
-    "About"
+    "tab2",
+    "tab3"
 ])
 
 with tab1:
@@ -110,88 +110,4 @@ with tab1:
             )
 
 
-with tab2:
-    st.subheader("Student dashboard")
-    st.markdown("[View Dashboard on Tableau Public](https://public.tableau.com/app/profile/win.wikind/viz/studentdashboard_17394505558280/Dashboard1?publish=yes)")
 
-    st.image("https://github.com/user-attachments/assets/e808d9fa-6c30-45fb-9d21-a5161f42cf98")
-
-
-    with st.expander("Summary: "):
-        st.write(
-            """
-            1. High Dropout Rate (32.12%)
-
-            Main contributing factors: academic debt, low admission scores, and delayed tuition payments.
-            Students with scholarships have a higher graduation rate compared to those without scholarships.
-            
-            2. Large Number of Displaced Students (54.84%)
-
-            Additional support, both financial and academic, is needed to improve their retention.
-            
-            3. Financial Issues Affect Academic Status
-
-            Students with academic debt are more vulnerable to dropping out compared to those without debt.
-            
-            4. Some Study Programs Have High Dropout Rates
-
-            Nursing and Management programs have a significant dropout rate.
-            Study programs with a small number of students need to be evaluated to enhance their appeal.
-            
-            """
-        )
-
-
-    with st.expander("Recommendation: "):
-            st.write(
-                """
-                Proposed Strategies to Reduce Dropout Rates
-
-                1. Expansion of Scholarship Programs
-
-                    Focus on students at risk of dropping out based on their financial status.
-                2. Flexible Payment Options
-
-                    Provide installment payment plans with 0% interest or partial debt/tuition forgiveness programs for high-achieving students.
-                3. Gap Year Program with Academic Support
-
-                    Offer a structured gap year program with special orientation for returning students to help them adjust to changes in the environment, technology, or curriculum.
-                4. Academic Guidance for Students with Low Grades
-
-                    Additional learning programs for students with low admission scores, especially for older and married students.
-                5. Psychological & Counseling Support
-
-                    Establish a psychological support and academic counseling center for students experiencing financial or academic stress.
-                6. Monitoring and Predicting Dropouts
-
-                    Conduct further review and monitoring of currently enrolled students.
-                    Utilize machine learning technology to predict dropout risks, enabling early intervention.
-                
-                """
-            )
-
-    st.write("Based on this analysis, the university must strengthen its financial, academic, and psychological support programs to improve student success. By implementing more flexible and data-driven strategies, dropout rates can be significantly reduced, and the quality of education at Jaya Jaya Institute will continue to improve."
-            )
-    
-
-with tab3:
-    
-    st.write(
-            """
-            
-            Jaya Jaya Institute is a higher education institution that has been established since the year 2000. Over the years, it has produced many graduates with an excellent reputation. However, a significant number of students fail to complete their education and drop out.
-            The high dropout rate is a major concern for an educational institution. Therefore, Jaya Jaya Institute aims to detect students at risk of dropping out as early as possible so that they can receive specialized guidance.
-
-            """
-            )
-
-with st.sidebar:
-        st.subheader("Disclaimer")
-        st.markdown("This document is created for academic purposes and is not intended to represent any specific individuals or organizations. Any similarities in names or events are purely coincidental.")
-
-
-year_now = datetime.date.today().year
-year = year_now if year_now == 2024 else f'2024 - {year_now}'
-name = "[B244044F]"
-copyright = 'Copyright © ' + str(year) + ' ' + name
-st.caption(copyright)

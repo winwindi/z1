@@ -9,13 +9,13 @@ import datetime
 # Load model
 def load_model(model_name):
    if model_name == 'Random Forrest':
-        model = pickle.load(open('model15/no_resampling_rf_model.pkl', 'rb'))
+        model = pickle.load(open('models/no_resampling_rf_model.pkl', 'rb'))
    elif model_name == 'Logistic Regression':
-        model = pickle.load(open('model15/no_resampling_lr_model.pkl', 'rb'))
+        model = pickle.load(open('models/no_resampling_lr_model.pkl', 'rb'))
    elif model_name == 'SVM':
-        model = pickle.load(open('model15/no_resampling_svm_model.pkl', 'rb'))
+        model = pickle.load(open('models/no_resampling_svm_model.pkl', 'rb'))
    elif model_name == 'Smote_LR':
-         model = pickle.load(open('model15/smote_lr_model.pkl', 'rb'))
+         model = pickle.load(open('models/smote_lr_model.pkl', 'rb'))
    elif model_name == 'Random Forest':
          model = pickle.load(open('models/random_forest_model.pkl', 'rb'))
    elif model_name == 'XGB':

@@ -1,13 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import datetime
-import joblib
-from sklearn.preprocessing import StandardScaler
-import io
-from imblearn.over_sampling import SMOTE
 
-buffer = io.BytesIO()
 
 
 
